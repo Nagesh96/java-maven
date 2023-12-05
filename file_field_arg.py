@@ -12,7 +12,7 @@ def update_jira_field(username, password, jira_ticket, field_value):
     issue.update(fields={'customfield_17856': field_value})
     print(f"Field 'customfield_17856' updated successfully for {jira_ticket}")
 
-if len(sys.argv) != 4:
+if len(sys.argv) != 3:
     print("Usage: python script.py <username> <password>")
     sys.exit(1)
 
